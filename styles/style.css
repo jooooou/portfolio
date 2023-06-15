@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
 
+:root{
+    --cor-footer:#000000;
+    --fonte-principal:'Montserrat', sans-serif;
+}
+
 *{
     margin:0;
     padding:0;
@@ -10,13 +15,14 @@ body{
     background-image:url("../assets/fundo.png");
     background-size:cover;
     color:#F6F6F6;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight:400;
 }
 
+
 header nav {
-    padding:1% 0px 0px 2%;
-    font-size:24px;
+    padding:1% 0 0 2%;
+    font-size:1.5rem;
     display:flex;
     align-items: center;
     gap:5%;
@@ -48,12 +54,13 @@ header nav a:nth-child(4):hover{
     align-items: center;
     justify-content: space-between;
     padding:5.4% 18%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight:900;
+    gap:80px;
 }
 
 .apresentacao-conteudo{
-    width:593px;
+    width:48.5%;
     display:flex;
     flex-direction:column;
     gap:40px;
@@ -62,23 +69,23 @@ header nav a:nth-child(4):hover{
 }
 
 .titulo{
-    font-size:24px;
+    font-size:1.5rem;
     color:#99C7FD;
     position:relative;
     top:30px;
 }
 
 .titulo-destaque{
-    font-size:36px;
+    font-size:2.25rem;
     color:#3485FF;
 }
 
 .texto-inicial{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .titulo-redes{
-    font-size:32px;
+    font-size:2rem;
     text-align: center;
     font-weight:900;
 }
@@ -97,10 +104,18 @@ header nav a:nth-child(4):hover{
     transform:scale(1.2);
 }
 
+.redes img{
+    width:100%;
+}
+
+.foto_guilherme{
+   width:100%;
+}
+
 footer{
-    color:#000000;
+    color:var(--cor-footer);
     background-color:#0075FF;
-    font-size:24px;
+    font-size:1.5rem;
     padding:24px;
     text-align:center;
     font-weight: 400;
@@ -109,18 +124,37 @@ footer{
 ::-webkit-scrollbar-track
   {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      background-color: #000000;
+      background-color: var(--cor-footer);
       border-radius: 5px;
   }
   
 ::-webkit-scrollbar
   {
       width: 5px;
-      background-color: #000000;
+      background-color:var(--cor-footer);
   }
   
 ::-webkit-scrollbar-thumb
   {
       border-radius: 10px;
       background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgb(118, 81, 250)),color-stop(0.72, rgb(76, 40, 149)), color-stop(0.86, rgb(76, 120, 252)));
+  }
+
+
+  @media (max-width: 1200px){
+    header nav{
+        padding:4%;
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction:column-reverse;
+    }
+    .apresentacao-conteudo{
+        width:85%;
+    }
+
+    .foto_guilherme{
+        padding:5%
+    }
   }
