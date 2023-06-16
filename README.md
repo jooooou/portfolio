@@ -18,3 +18,7 @@ Salve 👋, Bem vindo ao meu projeto de portfólio.
 ### Guilherme Duarte Barcelos
 
 ### Linkedin: https://www.linkedin.com/in/guilhermeduartebarcelos/
+
+## Links:
+* https://guilherme-duarte-barcelos.vercel.app/
+* https://jooooou.github.io/portfolio/
