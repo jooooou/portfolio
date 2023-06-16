@@ -23,4 +23,32 @@ main h1{
 
 main img{
     padding-top:18%;
+    width:100%;
+}
+
+@media (max-width: 1200px){
+    main{
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:32px;
+        padding:5.4% 15%;
+    }
+
+    .conteudo_principal{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+        width:100%;
+    }
+
+    main img{
+        padding-top:0%;
+    }
+}
+
+@media (max-width:600px){
+    main{
+        padding:25% 15%; 
+    }
 }

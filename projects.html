@@ -19,11 +19,31 @@
         </nav>
     </header>
 
+    <!-- Menu Hamburguer -->
+
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre mim</a></li>
+            <li><a href="./resume.html">Currículo</a></li>
+            <li><a href="./projects.html">Projetos</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+
     <main>
             <h1 class="titulo_projects">Projetos 📋</h1>
-            <section class="projetos">
+            <section class="projetos habits">
                 <img src="./assets/habits_mockup.svg" alt="Mockup de um Iphone e um Ipad com Imagem do App Habits" title="Mockup de um Iphone e um Ipad com Imagem do App Habits">
-                <div>
+                <div class="conteudo-principal">
                     <h2>Habits 🎯</h2>
                     <p>O Habits é um app para ajudar a rastrear os hábitos.</p>
                     <img src="./assets/tecnologias.png" alt="Logo das tecnologias utilizadas" title="Logo das tecnologias utilizadas">
@@ -35,8 +55,9 @@
             </section>
             <img src="./assets/polygon.svg" class="polygon" title="Um triângulo invertido vazio com uma borda azul" alt="Um triângulo invertido vazio com uma borda azul">
 
-            <section class="projetos">
-                <div>
+            <section class="projetos decodificador">
+                <img src="./assets/decodificador_mockup.svg" alt="Mockup de um Iphone e um Ipad com Imagem do App Decodificador" title="Mockup de um Iphone e um Ipad com Imagem do App Decodificador">
+                <div class="conteudo-principal">
                     <h2>Decodificador 🔑</h2>
                     <p>Decodificador de textos</p>
                     <img src="./assets/tecnologias.png" alt="Logo das tecnologias utilizadas" title="Logo das tecnologias utilizadas">
@@ -45,13 +66,13 @@
                         <a href="https://github.com/jooooou/one-decodificador" target="_blank">repositório</a>
                     </div>  
                 </div>
-                <img src="./assets/decodificador_mockup.svg" alt="Mockup de um Iphone e um Ipad com Imagem do App Decodificador" title="Mockup de um Iphone e um Ipad com Imagem do App Decodificador">
             </section>
             <img src="./assets/polygon.svg" class="polygon" title="Um triângulo invertido vazio com uma borda azul" alt="Um triângulo invertido vazio com uma borda azul">
     </main>
 
     <footer>
         <p>&copy; 2023 Guilherme Duarte Barcelos</p>
-    </footer>      
+    </footer>  
+<script src="./scripts/script_index.js"></script>    
 </body>
 </html>

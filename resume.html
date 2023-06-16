@@ -19,6 +19,26 @@
         </nav>
     </header>
 
+    <!-- Menu Hamburguer -->
+
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre mim</a></li>
+            <li><a href="./resume.html">Currículo</a></li>
+            <li><a href="./projects.html">Projetos</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+
     <main>
         <section class="conteudo_principal">
 
@@ -65,10 +85,8 @@
                         <summary>Cursos complementares</summary>
                         <p><b>Curso:</b> Programação Básica em Back-End</p>
                         <p><b>Empresa:</b> SENAI/SC</p>
-                        <br>
                         <p><b>Curso:</b> Formação Iniciante em Programação T5 - ONE</p>
                         <p><b>Empresa:</b> Alura</p>
-                        <br>
                         <p><b>Curso:</b> Empreendev - Sueli Carneiro</p>
                         <p><b>Empresa:</b> Be Academy</p>
                     </details>
@@ -82,14 +100,15 @@
         </section>
 
         <section class="conteudo_secundario">
-            <img src="./assets/foto_resume.png" alt="ícone de currículo" title="ícone de currículo">
+            <img src="./assets/foto_resume.png" alt="ícone de currículo" title="ícone de currículo" class="img-curriculo">
             <a href="./assets/curriculo.pdf" target="_blank"><button class="btn_download">download <img src="./assets/download.svg" alt="ícone de download" title="ícone de download"></button></a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Guilherme Duarte Barcelos</p>
-    </footer>    
+    </footer> 
+<script src="./scripts/script_index.js"></script>   
 <script src="./scripts/script_resume.js"></script>
 </body>
 </html>

@@ -77,6 +77,10 @@ details{
     gap:36px;
 }
 
+.img-curriculo{
+    width:100%;
+}
+
 .conteudo_secundario a {
     text-decoration:none;
 }
@@ -106,4 +110,50 @@ button{
 
 button:hover{
     transform:scale(1.1);
+}
+
+@media (max-width:1200px){
+    main{
+        flex-direction:column;
+        gap:50px;
+    }
+    .listas details{
+        font-size:1.5rem;
+    }
+    .listas details p{
+        font-size:1rem;
+    }
+    .listas details[open]{
+        width:100%;
+    }
+    .conteudo_secundario{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-curriculo{
+        width:70%;
+    }
+
+    button{
+        width:100%;
+    }
+}
+
+@media (max-width:600px){
+    main{
+        padding:15% 15%;
+    }
+    h1{
+        font-size:2rem;
+    }
+    h3{
+        font-size:1rem;
+    }
+    .img-curriculo{
+        width:100%;
+    }
+    .listas details{
+        width:100%;
+        line-break:anywhere;
+    }
 }
